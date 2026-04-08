@@ -8,11 +8,14 @@ const CategoryStore = useCategoryStore()
   <header class="app-header">
     <div class="container">
       <h1 class="logo">
-        <RouterLink to="/">小兔鲜</RouterLink>
+        <RouterLink to="home">小兔鲜</RouterLink>
       </h1>
       <ul class="app-header-nav">
+        <li>
+          <RouterLink to="/">首页</RouterLink>
+        </li>
         <li class="home" v-for="item in CategoryStore.categorylist">
-          <RouterLink to="/">{{ item.name }}</RouterLink>
+          <RouterLink :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
         </li>
       </ul>
       <div class="search">

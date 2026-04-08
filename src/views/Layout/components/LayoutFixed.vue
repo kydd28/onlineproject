@@ -5,8 +5,10 @@ import { onMounted } from 'vue'
 import { useCategoryStore } from '@/stores/layout'
 import { getLayout } from '@/api/Layout'
 const CategoryStore = useCategoryStore()
+
 onMounted(() => {
   CategoryStore.getLayoutapi()
+
 })
 </script>
 
@@ -16,9 +18,13 @@ onMounted(() => {
       <RouterLink class="logo" to="/" />
       <!-- 导航区域 -->
       <ul class="app-header-nav">
-        <li class="home" v-for="item in CategoryStore.categorylist">
-          <RouterLink to="/">{{ item.name }}</RouterLink>
+           <li>
+          <RouterLink to="/">首页</RouterLink>
         </li>
+        <li class="home" v-for="item in CategoryStore.categorylist">
+          <RouterLink :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
+        </li>
+
       </ul>
 
       <div class="right">

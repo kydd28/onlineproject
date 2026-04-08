@@ -1,25 +1,22 @@
+<script setup>
+import HomeBanner from './components/HomeBanner.vue'
+import HomeCategory from './components/HomeCategory.vue'
+import HomeHot from './components/HomeHot.vue'
+import HomeNew from './components/HomeNew.vue'
+import HomeProduct from './components/HomeProduct.vue'
+
+
+
+
+</script>
 <template>
-<div class="fa">
-  <div class="box">
-  我是home页面
-</div>
-</div>
+  <div class="container">
+    <HomeCategory></HomeCategory>
+    <HomeBanner></HomeBanner>
+  </div>
+  <HomeNew></HomeNew>
+  <HomeHot></HomeHot>
+  <HomeProduct></HomeProduct>
 </template>
 
-<script setup></script>
-
-<style lang="scss" scoped>
-.fa{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: pink;
-width: 1000px;
-height: 1000px;
-}
-</style>
+<style scoped lang="scss"></style>
