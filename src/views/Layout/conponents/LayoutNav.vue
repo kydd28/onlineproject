@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     我是Nav
   </div>
 </template>

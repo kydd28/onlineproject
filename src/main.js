@@ -1,8 +1,8 @@
 
-
+import "@/styles/common.css"
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-
+import "@/mock/index"
 import App from './App.vue'
 import router from './router'
 
