@@ -19,7 +19,6 @@ import { ref,onMounted } from 'vue';
 const a=ref([])
 const allcategotylist= async()=>{
   const res = await getallcategoryapi()
-  console.log(res);
   a.value=res.data.result 
 }
 onMounted(()=>{
