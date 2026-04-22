@@ -92,7 +92,6 @@ getcategory()
         width: 168px;
         height: 160px;
 
-
         a {
           text-align: center;
           display: block;
