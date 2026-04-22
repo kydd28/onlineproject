@@ -20,8 +20,8 @@ getproductlist()
       <li v-for="item in productlist.slice(0,4)" :key="item.id">
         <RouterLink to="/">
           <img :src="item.picture" alt="" />
-          <p class="name">{{ item.name }}</p>
-          <p class="price">&yen;{{ item.id}}</p>
+          <p class="name">{{ item.name }} 我是你的爹</p>
+          <p class="price">&yen;{{ item.id}} 我是你的神</p>
         </RouterLink>
       </li>
     </ul>
