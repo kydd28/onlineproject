@@ -1,7 +1,5 @@
 <template>
-  <div>
-    哦我的
-  </div>
+
 <RouterView></RouterView>
 </template>
 
