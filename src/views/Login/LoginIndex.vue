@@ -2,8 +2,7 @@
   <div class="common-layout">
     <el-container>
       <el-aside width="300px" >Aside</el-aside>
-          <el-header>Header</el-header>
-
+          <el-header>登陆内容</el-header>
     </el-container>
   </div>
 </template>
